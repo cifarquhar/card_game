@@ -13,4 +13,8 @@ public class Card{
     return this.suit;
   }
 
+  public int getValue(){
+    return this.value;
+  }
+
 }

@@ -17,4 +17,9 @@ public class CardTest{
     assertEquals(CardSuit.HEARTS,card1.getSuit());
   }
 
+  @Test
+  public void canFindValue(){
+    assertEquals(13,card2.getValue());
+  }
+
 }
