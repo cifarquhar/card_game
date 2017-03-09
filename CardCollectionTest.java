@@ -7,6 +7,8 @@ public class CardCollectionTest{
   Deck testDeck;
   Discard testDiscard;
   InPlay testInPlay;
+  Card testCard1;
+  Card testCard2;
 
   @Before
   public void before(){
@@ -14,6 +16,8 @@ public class CardCollectionTest{
     testDeck = new Deck();
     testDiscard = new Discard();
     testInPlay = new InPlay();
+    testCard1 = new Card(CardSuit.HEARTS,5);
+    testCard2 = new Card(CardSuit.CLUBS,13);
   }
 
   @Test
@@ -34,6 +38,12 @@ public class CardCollectionTest{
   @Test
   public void inPlayCanCountCards(){
     assertEquals(0,testInPlay.countCards());
+  }
+
+  @Test
+  public void handCanAddCards(){
+    testHand.addCard(testCard1);
+    assertEquals(1,testHand.countCards());
   }
 
 
