@@ -8,9 +8,13 @@ public class Game {
   ArrayList<Player> players;
 
 
-public Game(Dealer dealer, ArrayList<Player> players) {
+public Game(Dealer dealer) {
   this.dealer = dealer;
-  this.players = players;
+  this.players = new ArrayList<Player>();
+}
+
+public int countPlayers(){
+  return players.size();
 }
 
 

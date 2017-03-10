@@ -5,6 +5,7 @@ import java.util.*;
 
 public class GameTest{
 
+  Game testGame;
   Dealer testDealer;
   ArrayList<Player> players;
   Player testPlayer1;
@@ -26,6 +27,12 @@ public class GameTest{
     testDealer = new Dealer(testDeck);
     testPlayer1 = new Player("Player 1",testPlayer1Hand);
     testPlayer2 = new Player("Player 2",testPlayer2Hand);
+    testGame = new Game(testDealer);
+  }
+
+  @Test
+  public void canCountPlayers(){
+    assertEquals(0,testGame.countPlayers());
   }
 
 
