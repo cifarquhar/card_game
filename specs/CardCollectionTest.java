@@ -47,5 +47,22 @@ public class CardCollectionTest{
     assertEquals(1,testHand.countCards());
   }
 
+  @Test
+  public void deckCanAddCards(){
+    testDeck.addCard(testCard1);
+    assertEquals(1,testDeck.countCards());
+  }
+
+  @Test
+  public void discardCanAddCards(){
+    testDiscard.addCard(testCard1);
+    assertEquals(1,testDiscard.countCards());
+  }
+  @Test
+  public void inPlayCanAddCards(){
+    testInPlay.addCard(testCard1);
+    assertEquals(1,testInPlay.countCards());
+  }
+
 
 }
