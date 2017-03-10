@@ -10,6 +10,10 @@ public class DealerTest{
   Player testPlayer;
   Card testCard1;
   Card testCard2;
+  Card testCard3;
+  Card testCard4;
+  Card testCard5;
+  Card testCard6;
 
   @Before
   public void before(){
@@ -19,6 +23,10 @@ public class DealerTest{
     testPlayer = new Player("Colin",playerHand);
     testCard1 = new Card(CardSuit.HEARTS,5);
     testCard2 = new Card(CardSuit.CLUBS,13);
+    testCard3 = new Card(CardSuit.SPADES,2);
+    testCard4 = new Card(CardSuit.DIAMONDS,1);
+    testCard5 = new Card(CardSuit.CLUBS,9);
+    testCard6 = new Card(CardSuit.DIAMONDS,11);
   }
 
   @Test
@@ -47,6 +55,19 @@ public class DealerTest{
     assertEquals(1,dealer.deck.countCards());
     assertEquals(1,testPlayer.cardsHeld.countCards());
   }
+
+  // @Test
+  // public void canDealRandomCardToPlayer(){
+  //   dealer.deck.addCard(testCard1);
+  //   dealer.deck.addCard(testCard2);
+  //   dealer.deck.addCard(testCard3);
+  //   dealer.deck.addCard(testCard4);
+  //   dealer.deck.addCard(testCard5);
+  //   dealer.deck.addCard(testCard6);
+  //   dealer.dealRandomToPlayer(testPlayer);
+  //   assertFalse(dealer.deck.contain(testPlayer.cardsHeld(0)));
+  // }
+
 
 
 }
