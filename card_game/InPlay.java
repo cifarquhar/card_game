@@ -26,4 +26,8 @@ public class InPlay implements CardCollection{
     return null;
   }
 
+  public ArrayList<Card> shuffle(){
+    return cards;
+  }
+
 }
