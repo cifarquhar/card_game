@@ -5,7 +5,7 @@ import java.util.*;
 public class Player{
 
   String name;
-  CardCollection cardsHeld;
+  public CardCollection cardsHeld;
 
   public Player(String name, CardCollection hand){
     this.name = name;

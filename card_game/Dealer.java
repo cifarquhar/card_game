@@ -10,5 +10,10 @@ public class Dealer{
     this.deck = deck;
   }
 
+  public void dealToPlayer(Player player){
+    Card cardToDeal = deck.removeCard();
+    player.cardsHeld.addCard(cardToDeal);
+  }
+
 
 }
