@@ -18,5 +18,12 @@ public class Deck implements CardCollection{
     this.cards.add(card);
   }
 
+  public Card removeCard(){
+    if (countCards() > 0){
+      return cards.remove(0);
+    }
+    return null;
+  }
+
 
 }

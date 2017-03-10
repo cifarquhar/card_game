@@ -6,4 +6,6 @@ public interface CardCollection{
 
   public void addCard(Card card);
 
+  public Card removeCard();
+
 }
