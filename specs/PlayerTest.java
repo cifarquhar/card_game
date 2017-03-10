@@ -6,11 +6,13 @@ public class PlayerTest{
 
   Player player1;
   Hand player1Hand;
+  Card testCard1;
 
   @Before
   public void before(){
     player1Hand = new Hand();
     player1 = new Player("Colin",player1Hand);
+    testCard1 = new Card(CardSuit.HEARTS,5);
   }
 
   @Test
@@ -21,6 +23,12 @@ public class PlayerTest{
   @Test
   public void canCountPlayersCards(){
     assertEquals(0,player1Hand.countCards());
+  }
+
+  @Test
+  public void canAddPlayerCard(){
+    player1Hand.addCard(testCard1);
+    assertEquals(1,player1Hand.countCards());
   }
 
 
