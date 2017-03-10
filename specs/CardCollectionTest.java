@@ -4,10 +4,10 @@ import card_game.*;
 
 public class CardCollectionTest{
 
-  Hand testHand;
-  Deck testDeck;
-  Discard testDiscard;
-  InPlay testInPlay;
+  CardCollection testHand;
+  CardCollection testDeck;
+  CardCollection testDiscard;
+  CardCollection testInPlay;
   Card testCard1;
   Card testCard2;
 
@@ -63,6 +63,8 @@ public class CardCollectionTest{
     testInPlay.addCard(testCard1);
     assertEquals(1,testInPlay.countCards());
   }
+
+
 
 
 }
