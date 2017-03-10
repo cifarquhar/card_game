@@ -5,9 +5,9 @@ import java.util.*;
 public class Player{
 
   String name;
-  Hand cardsHeld;
+  CardCollection cardsHeld;
 
-  public Player(String name, Hand hand){
+  public Player(String name, CardCollection hand){
     this.name = name;
     this.cardsHeld = hand;
   }
