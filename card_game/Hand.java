@@ -1,10 +1,12 @@
+package card_game;
+
 import java.util.*;
 
-public class Deck implements CardCollection{
+public class Hand implements CardCollection{
   
   ArrayList<Card> cards;
 
-  public Deck(){
+  public Hand(){
     this.cards = new ArrayList<Card>();
   }
 
@@ -15,6 +17,7 @@ public class Deck implements CardCollection{
   public void addCard(Card card){
     this.cards.add(card);
   }
+
 
 
 }

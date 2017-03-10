@@ -1,3 +1,5 @@
+package card_game;
+
 public interface CardCollection{
   
   public int countCards();
