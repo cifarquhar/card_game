@@ -35,5 +35,12 @@ public class GameTest{
     assertEquals(0,testGame.countPlayers());
   }
 
+  @Test
+  public void canAddPlayerToGame(){
+    testGame.addPlayer(testPlayer1);
+    testGame.addPlayer(testPlayer2);
+    assertEquals(2,testGame.countPlayers());
+  }
+
 
 }
