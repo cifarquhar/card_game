@@ -22,5 +22,11 @@ public class DealerTest{
     assertNotNull(dealer.deck);
   }
 
+  @Test
+  public void canAddCardToDealerDeck(){
+    dealer.deck.addCard(testCard1);
+    assertEquals(1,dealer.deck.countCards());
+  }
+
 
 }
