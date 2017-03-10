@@ -28,5 +28,12 @@ public class DealerTest{
     assertEquals(1,dealer.deck.countCards());
   }
 
+  @Test
+  public void canRemoveCardFromDealerDeck(){
+    dealer.deck.addCard(testCard1);
+    dealer.deck.removeCard();
+    assertEquals(0,dealer.deck.countCards());
+  }
+
 
 }
