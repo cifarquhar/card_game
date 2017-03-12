@@ -19,7 +19,7 @@ public class GameTest{
   Card testCard4;
   Card testCard5;
   Card testCard6;
-  CardCollection testInPlay;
+  // CardCollection testInPlay;
 
   @Before
   public void before(){
@@ -29,8 +29,8 @@ public class GameTest{
     testDealer = new Dealer(testDeck);
     testPlayer1 = new Player("Player 1",testPlayer1Hand);
     testPlayer2 = new Player("Player 2",testPlayer2Hand);
-    testInPlay = new InPlay();
-    testGame = new Game(testDealer,testInPlay);
+    // testInPlay = new InPlay();
+    testGame = new Game(testDealer);
     testCard1 = new Card(CardSuit.HEARTS,5);
     testCard2 = new Card(CardSuit.CLUBS,13);
     testCard3 = new Card(CardSuit.SPADES,2);
@@ -51,15 +51,29 @@ public class GameTest{
     assertEquals(2,testGame.countPlayers());
   }
 
-  @Test
-  public void canPlayTurn(){
-    testDeck.addCard(testCard1);
-    testDeck.addCard(testCard2);
-    testGame.addPlayer(testPlayer1);
-    testDealer.dealToPlayer(testPlayer1);
-    testGame.playTurn(testPlayer1);
-    assertEquals(1,testInPlay.countCards());
-  }
+  // @Test
+  // public void canPlayTurn(){
+  //   testDeck.addCard(testCard1);
+  //   testDeck.addCard(testCard2);
+  //   testGame.addPlayer(testPlayer1);
+  //   testDealer.dealToPlayer(testPlayer1);
+  //   testGame.playTurn(testPlayer1);
+  //   assertEquals(1,testInPlay.countCards());
+  // }
+
+  // @Test
+  // public void canCheckWinner(){
+  //   testDeck.addCard(testCard1);
+  //   testDeck.addCard(testCard2);
+  //   testGame.addPlayer(testPlayer1);
+  //   testGame.addPlayer(testPlayer2);
+  //   testDealer.dealToPlayer(testPlayer1);
+  //   testDealer.dealToPlayer(testPlayer2);
+  //   testGame.playTurn(testPlayer1);
+  //   testGame.playTurn(testPlayer2);
+  //   System.out.println(testGame.cardsInPlay);
+  //   assertEquals("Player 2 wins!",testGame.checkWinner());
+  // }
 
 
 }
