@@ -72,21 +72,23 @@ public class GameTest{
     // testGame.playTurn(testPlayer1);
     // testGame.playTurn(testPlayer2);
     // System.out.println(testPlayer1.cardsHeld);
-    assertEquals("Player 2 wins!",testGame.checkSimpleWinner());
+    assertEquals("Player 2 wins!",testGame.checkWinner());
   }
 
-  // @Test
-  // public void canCheckComplexWinner(){
-  //   testDeck.addCard(testCard1);
-  //   testDeck.addCard(testCard2);
-  //   testDeck.addCard(testCard3);
-  //   testDeck.addCard(testCard4);
-  //   testDealer.dealToPlayer(testPlayer1);
-  //   testDealer.dealToPlayer(testPlayer2);
-  //   testDealer.dealToPlayer(testPlayer1);
-  //   testDealer.dealToPlayer(testPlayer2);
-  //   assertEquals("Player 2 wins!",testGame.checkComplexWinner());
-  // }
+  @Test
+  public void canCheckComplexWinner(){
+    testDeck.addCard(testCard1);
+    testDeck.addCard(testCard2);
+    testDeck.addCard(testCard3);
+    testDeck.addCard(testCard4);
+    testGame.addPlayer(testPlayer1);
+    testGame.addPlayer(testPlayer2);
+    testDealer.dealToPlayer(testPlayer1);
+    testDealer.dealToPlayer(testPlayer2);
+    testDealer.dealToPlayer(testPlayer1);
+    testDealer.dealToPlayer(testPlayer2);
+    assertEquals("Player 2 wins!",testGame.checkWinner());
+  }
 
 
 }
