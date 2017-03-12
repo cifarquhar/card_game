@@ -29,8 +29,8 @@ public void addPlayer(Player player){
 // }
 
 public String checkSimpleWinner(){
-  int player1Score = players.get(0).cardsHeld.cards.get(0).value;
-  int player2Score = players.get(1).cardsHeld.cards.get(0).value;
+  int player1Score = players.get(0).totalScore();
+  int player2Score = players.get(1).totalScore();
   if (player1Score > player2Score){
   return "Player 1 wins!";
 }
