@@ -75,5 +75,18 @@ public class GameTest{
     assertEquals("Player 2 wins!",testGame.checkSimpleWinner());
   }
 
+  // @Test
+  // public void canCheckComplexWinner(){
+  //   testDeck.addCard(testCard1);
+  //   testDeck.addCard(testCard2);
+  //   testDeck.addCard(testCard3);
+  //   testDeck.addCard(testCard4);
+  //   testDealer.dealToPlayer(testPlayer1);
+  //   testDealer.dealToPlayer(testPlayer2);
+  //   testDealer.dealToPlayer(testPlayer1);
+  //   testDealer.dealToPlayer(testPlayer2);
+  //   assertEquals("Player 2 wins!",testGame.checkComplexWinner());
+  // }
+
 
 }

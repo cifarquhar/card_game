@@ -40,6 +40,20 @@ public class PlayerTest{
     assertEquals(1,player1Hand.countCards());
   }
 
+  @Test
+  public void canCheckInitialScoreZero(){
+    assertEquals(0,player1.score);
+  }
+
+  public void canCheckTotalScore(){
+    player1Hand.addCard(testCard1);
+    player1Hand.addCard(testCard2);
+    player1Hand.addCard(testCard3);
+    player1Hand.addCard(testCard4);
+    player1.totalScore();
+    assertEquals(21,player1.score);
+  }
+
   // @Test
   // public void canPlayCard(){
   //   player1Hand.addCard(testCard1);
