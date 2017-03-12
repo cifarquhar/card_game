@@ -18,6 +18,8 @@ public class GameTest{
   Card testCard3;
   Card testCard4;
   Card testCard5;
+  Card testCard6;
+  CardCollection testInPlay;
 
   @Before
   public void before(){
@@ -27,7 +29,14 @@ public class GameTest{
     testDealer = new Dealer(testDeck);
     testPlayer1 = new Player("Player 1",testPlayer1Hand);
     testPlayer2 = new Player("Player 2",testPlayer2Hand);
-    testGame = new Game(testDealer);
+    testInPlay = new InPlay();
+    testGame = new Game(testDealer,testInPlay);
+    testCard1 = new Card(CardSuit.HEARTS,5);
+    testCard2 = new Card(CardSuit.CLUBS,13);
+    testCard3 = new Card(CardSuit.SPADES,2);
+    testCard4 = new Card(CardSuit.DIAMONDS,1);
+    testCard5 = new Card(CardSuit.CLUBS,9);
+    testCard6 = new Card(CardSuit.DIAMONDS,11);
   }
 
   @Test
@@ -40,6 +49,16 @@ public class GameTest{
     testGame.addPlayer(testPlayer1);
     testGame.addPlayer(testPlayer2);
     assertEquals(2,testGame.countPlayers());
+  }
+
+  @Test
+  public void canPlayTurn(){
+    testDeck.addCard(testCard1);
+    testDeck.addCard(testCard2);
+    testGame.addPlayer(testPlayer1);
+    testDealer.dealToPlayer(testPlayer1);
+    testGame.playTurn(testPlayer1);
+    assertEquals(1,testInPlay.countCards());
   }
 
 
