@@ -56,17 +56,6 @@ public class DealerTest{
     assertEquals(1,testPlayer.cardsHeld.countCards());
   }
 
-  // @Test
-  // public void canDealRandomCardToPlayer(){
-  //   dealer.deck.addCard(testCard1);
-  //   dealer.deck.addCard(testCard2);
-  //   dealer.deck.addCard(testCard3);
-  //   dealer.deck.addCard(testCard4);
-  //   dealer.deck.addCard(testCard5);
-  //   dealer.deck.addCard(testCard6);
-  //   dealer.dealRandomToPlayer(testPlayer);
-  //   assertFalse(dealer.deck.contain(testPlayer.cardsHeld(0)));
-  // }
 
 
 

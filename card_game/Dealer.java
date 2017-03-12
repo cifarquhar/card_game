@@ -15,9 +15,6 @@ public class Dealer{
     player.cardsHeld.addCard(cardToDeal);
   }
 
-  // public void dealRandomToPlayer(Player player){
-  //   Card cardToDeal = 
-  // }
 
 
 }
