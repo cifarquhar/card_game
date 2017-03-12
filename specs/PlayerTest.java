@@ -7,17 +7,23 @@ public class PlayerTest{
   Player player1;
   Hand player1Hand;
   Card testCard1;
+  Card testCard2;
+  Card testCard3;
+  Card testCard4;
 
   @Before
   public void before(){
     player1Hand = new Hand();
-    player1 = new Player("Colin",player1Hand);
+    player1 = new Player("Player1",player1Hand);
     testCard1 = new Card(CardSuit.HEARTS,5);
+    testCard2 = new Card(CardSuit.CLUBS,13);
+    testCard3 = new Card(CardSuit.SPADES,2);
+    testCard4 = new Card(CardSuit.DIAMONDS,1);
   }
 
   @Test
   public void playerHasName(){
-    assertEquals("Colin",player1.getName());
+    assertEquals("Player1",player1.getName());
   }
 
   @Test
