@@ -10,6 +10,6 @@ public interface CardCollection{
 
   public Card removeCard();
 
-  public ArrayList<Card> shuffle();
+  // public void shuffle();
 
 }

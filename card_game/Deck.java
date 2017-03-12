@@ -25,9 +25,9 @@ public class Deck implements CardCollection{
     return null;
   }
 
-  public ArrayList<Card> shuffle(){
-     return Collections.shuffle(cards);
-  }
+  // public void shuffle(){
+  //   Collections.shuffle(this.cards);
+  // }
 
 
 }
