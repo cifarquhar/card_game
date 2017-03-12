@@ -6,13 +6,13 @@ public class Game {
 
   Dealer dealer;
   ArrayList<Player> players;
-  // public CardCollection cardsInPlay;
+ 
 
 
 public Game(Dealer dealer) {
   this.dealer = dealer;
   this.players = new ArrayList<Player>();
-  // this.cardsInPlay = cardsInPlay;
+  
 }
 
 public int countPlayers(){
@@ -23,10 +23,6 @@ public void addPlayer(Player player){
   players.add(player);
 }
 
-// public void playTurn(Player player){
-//   Card cardPlayed = player.cardsHeld.removeCard();
-//   cardsInPlay.addCard(cardPlayed);
-// }
 
 public String checkWinner(){
   int player1Score = players.get(0).totalScore();
