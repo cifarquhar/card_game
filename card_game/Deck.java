@@ -1,33 +1,33 @@
-package card_game;
+// package card_game;
 
-import java.util.*;
+// import java.util.*;
 
-public class Deck implements CardCollection{
+// public class Deck implements CardCollection{
   
-  ArrayList<Card> cards;
+//   ArrayList<Card> cards;
 
-  public Deck(){
-    this.cards = new ArrayList<Card>();
-  }
+//   public Deck(){
+//     this.cards = new ArrayList<Card>();
+//   }
 
-  public int countCards(){
-    return this.cards.size();
-  }
+//   public int countCards(){
+//     return this.cards.size();
+//   }
 
-  public void addCard(Card card){
-    this.cards.add(card);
-  }
+//   public void addCard(Card card){
+//     this.cards.add(card);
+//   }
 
-  public Card removeCard(){
-    if (countCards() > 0){
-      return cards.remove(0);
-    }
-    return null;
-  }
+//   public Card removeCard(){
+//     if (countCards() > 0){
+//       return cards.remove(0);
+//     }
+//     return null;
+//   }
 
-  // public void shuffle(){
-  //   Collections.shuffle(this.cards);
-  // }
+//   // public void shuffle(){
+//   //   Collections.shuffle(this.cards);
+//   // }
 
 
-}
+// }

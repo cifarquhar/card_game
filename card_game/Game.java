@@ -29,26 +29,21 @@ public void addPlayer(Player player){
 // }
 
 public String checkWinner(){
-  int player1Score = players.get(0).cardsHeld.get(0).value();
-  int player2Score = players.get(1).cardsHeld.get(0).value;
+  int player1Score = players.get(0).cardsHeld.cards.get(0).value;
+  int player2Score = players.get(1).cardsHeld.cards.get(0).value;
+  if (player1Score > player2Score){
+  return "Player 1 wins!";
 }
-
-
-
-
-//   if (cardsInPlay.cards(0).value > cardsInPlay.cards(1).value){
-//   return "Player 1 wins!";
-// }
-//   else if (cardsInPlay.cards(0).value < cardsInPlay.cards(1).value){
-//   return "Player 2 wins!";
-// }
-//   else if (cardsInPlay.cards(0).value == cardsInPlay.cards(1).value){
-//   return "Draw!";
-// }
-//   else {
-//     return "Something's gone wrong...";
-//   }
-// }
+  else if (player1Score < player2Score){
+  return "Player 2 wins!";
+}
+  else if (player1Score == player2Score){
+  return "Draw!";
+}
+  else {
+    return "Something's gone wrong...";
+  }
+}
 
 
 

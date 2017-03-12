@@ -15,7 +15,7 @@ public class PlayerTest{
 
   @Before
   public void before(){
-    player1Hand = new Hand();
+    player1Hand = new CardCollection();
     player1 = new Player("Player1",player1Hand);
     testCard1 = new Card(CardSuit.HEARTS,5);
     testCard2 = new Card(CardSuit.CLUBS,13);

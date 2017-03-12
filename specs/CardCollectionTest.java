@@ -18,10 +18,10 @@ public class CardCollectionTest{
 
   @Before
   public void before(){
-    testHand = new Hand();
-    testDeck = new Deck();
-    testDiscard = new Discard();
-    testInPlay = new InPlay();
+    testHand = new CardCollection();
+    testDeck = new CardCollection();
+    testDiscard = new CardCollection();
+    testInPlay = new CardCollection();
     testCard1 = new Card(CardSuit.HEARTS,5);
     testCard2 = new Card(CardSuit.CLUBS,13);
     testCard3 = new Card(CardSuit.SPADES,2);

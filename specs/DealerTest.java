@@ -17,9 +17,9 @@ public class DealerTest{
 
   @Before
   public void before(){
-    testDeck = new Deck();
+    testDeck = new CardCollection();
     dealer = new Dealer(testDeck);
-    playerHand = new Hand();
+    playerHand = new CardCollection();
     testPlayer = new Player("Colin",playerHand);
     testCard1 = new Card(CardSuit.HEARTS,5);
     testCard2 = new Card(CardSuit.CLUBS,13);
