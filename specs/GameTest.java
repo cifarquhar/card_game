@@ -62,7 +62,7 @@ public class GameTest{
   // }
 
   @Test
-  public void canCheckWinner(){
+  public void canCheckSimpleWinner(){
     testDeck.addCard(testCard1);
     testDeck.addCard(testCard2);
     testGame.addPlayer(testPlayer1);
@@ -72,7 +72,7 @@ public class GameTest{
     // testGame.playTurn(testPlayer1);
     // testGame.playTurn(testPlayer2);
     // System.out.println(testPlayer1.cardsHeld);
-    assertEquals("Player 2 wins!",testGame.checkWinner());
+    assertEquals("Player 2 wins!",testGame.checkSimpleWinner());
   }
 
 
